@@ -1,0 +1,2 @@
+export PATH="$HOME/bin:$PATH"
+export fpath=($HOME/.config/zsh/functions ${fpath[@]})

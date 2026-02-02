@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Basic command convenience
+alias ls='ls --color=auto --almost-all'
+alias grep='grep --color=auto'
+alias mv='mv -i'
+alias cp='cp -i'
+alias n='nvim'
+
+# Programs
+z() { zathura --fork "$@" 2>/dev/null }
+
+# Easier directory access
+alias cd='cd '
+alias cloud='/data/Senfcloud/'
+alias brokencars='/data/Senfcloud/broken_cars/'
+alias notes='/data/Senfcloud/Notes/'

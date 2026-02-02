@@ -1,0 +1,82 @@
+{
+	"clock": {
+		"locale": "en_GB.UTF-8",
+		"format": "{:%H:%M}",
+		"tooltip-format": "<tt><span size='12pt' font='BitStromWera Nerd Font'>{calendar}</span></tt>",
+		"interval": 30,
+		"timezone": "Europe/Vienna",
+		"calendar": {
+			"mode"          : "year",
+            "mode-mon-col"  : 4,
+			"weeks-pos"     : "right",
+			"on-scroll"     : 1,
+			"format": {
+				"months":     "<span color='#c7849d'><b>{}</b></span>",
+				"days":       "<span color='#78A65A'><b>{}</b></span>",
+				"weeks":      "<span color='#2c6d37'><b>W{}</b></span>",
+				"weekdays":   "<span color='#C58B5F'><b>{}</b></span>",
+				"today":      "<span color='#c57277'><b><u>{}</u></b></span>"
+			}
+		},
+		"actions":  {
+			"on-click": "mode",
+			"on-scroll-up": "shift_up",
+			"on-scroll-down": "shift_down"
+        }
+	},
+	"custom/temperature": {
+		"exec": "~/bin/show_temps.sh",
+		"interval": 1,
+		"tooltip": false
+	},
+	"memory": {
+		"format": "{used:0.1f}G/{total:0.1f}G",
+		"tooltip": false
+	},
+	"cpu": {
+		"interval": 3,
+		"format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
+		"format-icons": [
+			"<span color='#cbd4c1'>▁</span>",
+			"<span color='#cbd4c1'>▂</span>",
+			"<span color='#cbd4c1'>▃</span>",
+          	"<span color='#cbd4c1'>▄</span>",
+          	"<span color='#cbd4c1'>▅</span>",
+          	"<span color='#cbd4c1'>▆</span>",
+          	"<span color='#cbd4c1'>▇</span>",
+          	"<span color='#cbd4c1'>█</span>"
+		],
+		"tooltip": false
+	},
+	"wireplumber#sink": {
+		"node-type": "Audio/Sink",
+		"format": "{icon}  : {volume}%",
+		"format-icons": ["", ""],
+		"format-muted": "",
+		"on-click": "~/bin/change_volume.sh -v 20 -t sink",
+		"on-click-right": "~/bin/change_volume.sh -v -20 -t sink",
+		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+	},
+	"wireplumber#source": {
+		"node-type": "Audio/Source",
+		"format": "{icon} : {volume}%",
+		"format-icons": [""],
+		"format-muted": "",
+		"on-click": "~/bin/change_volume.sh -v 20 -t source",
+		"on-click-right": "~/bin/change_volume.sh -v -20 -t source",
+		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+	},
+	"hyprland/workspaces": {
+		"format": "{icon}: {windows}",
+		"format-window-separator": "",
+		"workspace-taskbar": {
+			"enable": true,
+			"update-active-window": true,
+			"format": "{icon} {title:.20}",
+			"icon-size": 12
+		}
+	},
+	"hyprland/window": {
+		"separate-outputs": true
+	}
+}

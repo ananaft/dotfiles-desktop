@@ -1,0 +1,124 @@
+{
+  "$schema": "file://home/luki/.config/fastfetch/schema.json",
+  "logo": {
+	  "source": "arch",
+	  "color": {
+		  "1": "light_magenta",
+		  "2": "magenta"
+	  },
+	  "padding": {
+		  "top": 1,
+		  "left": 2,
+		  "right": 3
+	  }
+  },
+  "display": {
+	"color": {
+		"keys": "green",
+		"output": "white"
+	}	
+  },
+  "modules": [
+	"break",
+	{
+		"type": "title",
+		"color": {
+			"user": "light_blue",
+			"at": "white",
+			"host": "light_blue"
+		}
+	},
+    {
+		"type": "separator",
+		"outputColor": "white"
+	},
+	"break",
+    {
+		"type": "os"
+		// "keyColor": "green",
+		// "outputColor": "light_green"
+	},
+    // "host",
+    {
+		"type": "kernel"
+		// "keyColor": "red",
+		// "outputColor": "light_red"
+	},
+	// {	"type": "bios"
+		// "keyColor": "green",
+		// "outputColor": "light_green"
+	// },
+    {
+		"type": "uptime",
+		// "keyColor": "yellow",
+		// "outputColor": "light_yellow",
+		"format": "{hours}:{minutes}h"
+	},
+	{
+		"type": "datetime",
+		// "keyColor": "green",
+		// "outputColor": "light_green",
+		"format": "{hour-pretty}:{minute-pretty} / {day-in-month}-{month-pretty}-{year}"
+	},
+    {	"type": "packages"
+		// "keyColor": "magenta",
+		// "outputColor": "light_magenta"
+	},
+    {	"type": "shell"
+		// "keyColor": "green",
+		// "outputColor": "light_green"
+	},
+    // "display",
+    // "de",
+    {	"type": "wm"
+		// "keyColor": "cyan",
+		// "outputColor": "light_cyan"
+	},
+    // "wmtheme",
+    // "theme",
+    // "icons",
+    // "font",
+    // "cursor",
+    {	"type": "terminal"
+		// "keyColor": "green",
+		// "outputColor": "light_green"
+	},
+    // "terminalfont",
+	{	"type": "editor"
+		// "keyColor": "red",
+		// "outputColor": "light_red"
+	},
+    {	"type": "cpu",
+		// "keyColor": "green",
+		// "outputColor": "light_green",
+		"format": "{name}"
+	},
+    {	"type": "gpu",
+		// "keyColor": "yellow",
+		// "outputColor": "light_yellow",
+		"format": "{name}"
+	},
+    {	"type": "memory",
+		// "keyColor": "green",
+		// "outputColor": "light_green",
+		"format": "{used} / {total}"
+	},
+    {	"type": "swap",
+		// "keyColor": "magenta",
+		// "outputColor": "light_magenta",
+		"format": "{used} / {total}"
+	},
+    {
+		"type": "disk",
+		// "keyColor": "green",
+		// "outputColor": "light_green",
+		"format": "{size-used} / {size-total}"
+	},
+    // "localip",
+    // "battery",
+    // "poweradapter",
+    // "locale",
+    "break",
+    "colors"
+  ]
+}

@@ -1,0 +1,77 @@
+// -*- mode: jsonc -*-
+[{
+	"layer": "top",
+	"output": "DP-1",
+	"height": 30,
+	"spacing": 5,
+	"include": [
+		"~/.config/waybar/default-modules.json"
+	],
+	"modules-left": [
+		"hyprland/workspaces",
+        "hyprland/submap"
+	],
+	"modules-center": [
+		"hyprland/window"
+    ],
+	"modules-right": [
+		"wireplumber#sink",
+		"wireplumber#source",
+		"tray",
+		"clock"
+	],
+	// Module configuration
+	"hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三"
+        }
+	}
+}, {
+	"layer": "top",
+	"output": "HDMI-A-1",
+	"height": 30,
+	"spacing": 5,
+	"include": [
+		"~/.config/waybar/default-modules.json"
+	],
+	"modules-left": [
+		"hyprland/workspaces",
+        "hyprland/submap"
+	],
+	"modules-center": [
+		"hyprland/window"
+    ],
+	"modules-right": [
+		"custom/temperature",
+		"cpu",
+		"memory",
+		"wireplumber#sink",
+		"wireplumber#source",
+		"tray",
+		"clock"
+	],
+	// Module configuration
+	"hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "4": "四",
+            "5": "五",
+			"6": "六"
+        }
+	},
+	"clock": {
+		"calendar": {
+			"mode": "month",
+			"format": {
+				"months":     "<span color='#cbd4c1'><b>{}</b></span>",
+				"days":       "<span color='#003f74'><b>{}</b></span>",
+				"weeks":      "<span color='#257697'><b>W{}</b></span>",
+				"weekdays":   "<span color='#93b2bb'><b>{}</b></span>",
+				"today":      "<span color='#cbd4c1'><b><u>{}</u></b></span>"
+			}
+		}
+	}
+}]
