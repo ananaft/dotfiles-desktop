@@ -18,6 +18,7 @@ bin/exercism
 !.config/fastfetch/config.jsonc
 !.config/hypr/
 !.config/hypr/*
+
 !.config/nvim/
 !.config/nvim/init.lua
 !.config/nvim/.luarc.json
@@ -26,6 +27,9 @@ bin/exercism
 !.config/nvim/lua/core/*
 !.config/nvim/lua/plugins
 !.config/nvim/lua/plugins/*
+!.config/nvim/lsp/
+!.config/nvim/lsp/*
+
 !.config/shell/
 !.config/shell/*
 !.config/waybar/
