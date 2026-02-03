@@ -40,7 +40,7 @@ if [[ ! "${node_type,,}" =~ ^(sink|source)$ ]]; then
 	usage
 fi
 # Check if passed value is a number
-if [[ ! "$value" -eq "$value" ]] 2>/dev/null; then
+if [[ ! "$value" =~ ^-?[0-9]+$ ]]; then
 	echo 'Error: Value option is not an integer'
 	usage
 fi
@@ -56,8 +56,6 @@ read -r _ current_volume <<< $(wpctl get-volume "$node_type")
 current_volume=$(echo "($current_volume * 100) / 1" | bc)
 
 # Change volume
-echo "$value"
-echo "$current_volume"
 if [[ $(( value + current_volume )) -gt 100 ]]; then
 	wpctl set-volume "$node_type" 100%
 elif [[ "$value" -lt 0 ]]; then

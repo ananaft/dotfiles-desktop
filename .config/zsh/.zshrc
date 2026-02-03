@@ -1,5 +1,5 @@
 # ssh setup
-eval $(keychain --eval ~/.ssh/id_rsa ~/.ssh/id_ed25519) 
+eval $(keychain --quiet --eval ~/.ssh/id_rsa ~/.ssh/id_ed25519) 
 
 # source global shell alias & variables files
 [ -f "$XDG_CONFIG_HOME/shell/alias" ] && source "$XDG_CONFIG_HOME/shell/alias"
