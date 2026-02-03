@@ -20,6 +20,7 @@ bin/exercism
 !.config/hypr/*
 !.config/nvim/
 !.config/nvim/init.lua
+!.config/nvim/.luarc.json
 !.config/nvim/lua/
 !.config/nvim/lua/core
 !.config/nvim/lua/core/*
