@@ -10,3 +10,14 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.formatoptions:remove({ "c", "r", "o" })
 		end,
 })
+
+-- start treesitter
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = {
+		"c", "h", "sh", "lua", "py", "js", "ts",
+		"html", "css", "json", "jsonc", "markdown", "tex"
+	},
+	callback = function()
+		vim.treesitter.start()
+	end,
+})

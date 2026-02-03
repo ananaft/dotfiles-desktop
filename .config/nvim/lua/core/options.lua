@@ -1,3 +1,11 @@
+local global_options = {
+	c_syntax_for_h = 1,
+}
+
+for k, v in pairs(global_options) do
+	vim.g[k] = v
+end
+
 local options = {
 	tabstop = 4,
 	shiftwidth = 4,
