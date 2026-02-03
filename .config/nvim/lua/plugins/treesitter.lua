@@ -5,6 +5,6 @@ require("nvim-treesitter").setup {
 require"nvim-treesitter.configs".setup {
 	ensure_installed = { 
 		"c", "bash", "lua", "python", "javascript", "typescript", 
-		"html", "css", "json", "markdown", "latex"
+		"html", "css", "json", "jsonc", "markdown", "latex"
 	}
 }
