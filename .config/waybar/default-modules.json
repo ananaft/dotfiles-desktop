@@ -78,5 +78,11 @@
 	},
 	"hyprland/window": {
 		"separate-outputs": true
+	},
+	"hyprland/language": {
+		"format": {},
+		"format-en": "us",
+		"format-de": "de",
+		"tooltip": false
 	}
 }

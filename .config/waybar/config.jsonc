@@ -15,6 +15,7 @@
 		"hyprland/window"
     ],
 	"modules-right": [
+		"hyprland/language",
 		"wireplumber#sink",
 		"wireplumber#source",
 		"tray",
@@ -48,6 +49,7 @@
 		"custom/temperature",
 		"cpu",
 		"memory",
+		"hyprland/language",
 		"wireplumber#sink",
 		"wireplumber#source",
 		"tray",
