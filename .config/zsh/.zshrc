@@ -36,6 +36,8 @@ bindkey "^k" history-search-backward
 bindkey "^[[1;5D" backward-word # control + left
 bindkey "^[[1;5C" forward-word # control + right
 bindkey "^[[3~" delete-char # delete
+bindkey "^[[H" beginning-of-line # home
+bindkey "^[[F" end-of-line # end
 
 # history opts
 HISTSIZE=1000000
