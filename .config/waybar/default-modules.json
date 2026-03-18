@@ -25,7 +25,7 @@
         }
 	},
 	"custom/temperature": {
-		"exec": "~/bin/show_temps.sh",
+		"exec": "~/.config/waybar/scripts/show_temps.sh",
 		"interval": 1,
 		"tooltip": false
 	},
@@ -53,8 +53,8 @@
 		"format": "{icon}  : {volume}%",
 		"format-icons": ["", ""],
 		"format-muted": "",
-		"on-click": "~/bin/change_volume.sh -v 20 -t sink",
-		"on-click-right": "~/bin/change_volume.sh -v -20 -t sink",
+		"on-click": "~/.config/waybar/scripts/change_volume.sh -v 20 -t sink",
+		"on-click-right": "~/.config/waybar/scripts/change_volume.sh -v -20 -t sink",
 		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 	},
 	"wireplumber#source": {
@@ -62,8 +62,8 @@
 		"format": "{icon} : {volume}%",
 		"format-icons": [""],
 		"format-muted": "",
-		"on-click": "~/bin/change_volume.sh -v 20 -t source",
-		"on-click-right": "~/bin/change_volume.sh -v -20 -t source",
+		"on-click": "~/.config/waybar/scripts/change_volume.sh -v 20 -t source",
+		"on-click-right": "~/.config/waybar/scripts/change_volume.sh -v -20 -t source",
 		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 	},
 	"hyprland/workspaces": {

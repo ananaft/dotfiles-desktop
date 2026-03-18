@@ -36,6 +36,8 @@ bin/exercism
 !.config/waybar/config.jsonc
 !.config/waybar/default-modules.json
 !.config/waybar/style.css
+!.config/waybar/scripts/
+!.config/waybar/scripts/*
 !.config/wireplumber/
 !.config/wireplumber/wireplumber.conf.d/
 !.config/wireplumber/wireplumber.conf.d/*
