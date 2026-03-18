@@ -38,7 +38,8 @@
 		"hyprland/window"
     ],
 	"modules-right": [
-		"custom/temperature",
+		"custom/cpu_temp",
+		"custom/gpu_temp",
 		"cpu",
 		"memory",
 		"hyprland/language",

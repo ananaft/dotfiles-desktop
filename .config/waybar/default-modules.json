@@ -44,8 +44,15 @@
 			"on-scroll-down": "shift_down"
         }
 	},
-	"custom/temperature": {
-		"exec": "~/.config/waybar/scripts/show_temps.sh",
+	"custom/cpu_temp": {
+		"exec": "~/.config/waybar/scripts/cpu_temp.sh",
+		"format": "<span size='90%'></span> :{}",
+		"interval": 1,
+		"tooltip": false
+	},
+	"custom/gpu_temp": {
+		"exec": "~/.config/waybar/scripts/gpu_temp.sh",
+		"format": "<span size='110%'></span> :{}",
 		"interval": 1,
 		"tooltip": false
 	},
