@@ -19,7 +19,8 @@
 		"wireplumber#sink",
 		"wireplumber#source",
 		"tray",
-		"clock#screen1"
+		"clock#screen1",
+		"custom/power"
 	]
 }, {
 	"layer": "top",
@@ -44,6 +45,7 @@
 		"wireplumber#sink",
 		"wireplumber#source",
 		"tray",
-		"clock#screen2"
+		"clock#screen2",
+		"custom/power"
 	]
 }]

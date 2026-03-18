@@ -86,8 +86,9 @@ button:hover {
 #memory,
 #network,
 #wireplumber,
+#custom-power,
 #tray {
-    padding: 0 10px;
+    padding: 0 6px;
 }
 
 #window,
