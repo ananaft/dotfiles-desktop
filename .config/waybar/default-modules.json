@@ -2,9 +2,11 @@
 	"clock": {
 		"locale": "en_GB.UTF-8",
 		"format": "{:%H:%M}",
-		"tooltip-format": "<tt><span size='12pt' font='BitStromWera Nerd Font'>{calendar}</span></tt>",
 		"interval": 30,
-		"timezone": "Europe/Vienna",
+		"timezone": "Europe/Vienna"
+	},
+	"clock#screen1": {
+		"tooltip-format": "<tt><span size='12pt' font='BitStromWera Nerd Font'>{calendar}</span></tt>",
 		"calendar": {
 			"mode"          : "year",
             "mode-mon-col"  : 4,
@@ -16,6 +18,24 @@
 				"weeks":      "<span color='#2c6d37'><b>W{}</b></span>",
 				"weekdays":   "<span color='#C58B5F'><b>{}</b></span>",
 				"today":      "<span color='#c57277'><b><u>{}</u></b></span>"
+			}
+		},
+		"actions":  {
+			"on-click": "mode",
+			"on-scroll-up": "shift_up",
+			"on-scroll-down": "shift_down"
+        }
+	},
+	"clock#screen2": {
+		"tooltip-format": "<tt><span size='12pt' font='BitStromWera Nerd Font'>{calendar}</span></tt>",
+		"calendar": {
+			"mode": "month",
+			"format": {
+				"months":     "<span color='#cbd4c1'><b>{}</b></span>",
+				"days":       "<span color='#003f74'><b>{}</b></span>",
+				"weeks":      "<span color='#257697'><b>W{}</b></span>",
+				"weekdays":   "<span color='#93b2bb'><b>{}</b></span>",
+				"today":      "<span color='#cbd4c1'><b><u>{}</u></b></span>"
 			}
 		},
 		"actions":  {
@@ -75,6 +95,22 @@
 			"format": "{icon} {title:.20}",
 			"icon-size": 12
 		}
+	},
+	"hyprland/workspaces#screen1": {
+		"format": "{icon}",
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三"
+        }
+	},
+	"hyprland/workspaces#screen2": {
+		"format": "{icon}",
+        "format-icons": {
+            "4": "四",
+            "5": "五",
+			"6": "六"
+        }
 	},
 	"hyprland/window": {
 		"separate-outputs": true

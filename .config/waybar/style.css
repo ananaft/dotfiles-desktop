@@ -1,7 +1,22 @@
+@define-color red				#b0223c;
+@define-color red_bright		#c57277;
+@define-color green				#2c6d37;
+@define-color green_bright		#78a65a;
+@define-color yellow			#b35a21;
+@define-color yellow_bright		#c58b5f;
+@define-color magenta			#b03881;
+@define-color magenta_bright	#c7849d;
+@define-color cyan				#48629c;
+@define-color cyan_bright		#93b2bb;
+@define-color white				#cbd4c1;
+@define-color white_bright		#ffffff;
+
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+	border: none;
+	border-radius: 0;
+    font-family: "BitstromWera Nerd Font";
+    font-size: 14px;
+	min-height: 0;
 }
 
 window#waybar {
