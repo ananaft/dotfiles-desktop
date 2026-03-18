@@ -70,7 +70,7 @@
 	},
 	"wireplumber#sink": {
 		"node-type": "Audio/Sink",
-		"format": "{icon}  : {volume}%",
+		"format": "{icon} :{volume}%",
 		"format-icons": ["", ""],
 		"format-muted": "",
 		"on-click": "~/.config/waybar/scripts/change_volume.sh -v 20 -t sink",
@@ -79,7 +79,7 @@
 	},
 	"wireplumber#source": {
 		"node-type": "Audio/Source",
-		"format": "{icon} : {volume}%",
+		"format": "{icon}:{volume}%",
 		"format-icons": [""],
 		"format-muted": "",
 		"on-click": "~/.config/waybar/scripts/change_volume.sh -v 20 -t source",
@@ -117,8 +117,8 @@
 	},
 	"hyprland/language": {
 		"format": {},
-		"format-en": "us",
-		"format-de": "de",
+		"format-en": "EN",
+		"format-de": "DE",
 		"tooltip": false
 	}
 }
