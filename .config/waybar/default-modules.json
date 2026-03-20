@@ -46,18 +46,18 @@
 	},
 	"custom/cpu_temp": {
 		"exec": "~/.config/waybar/scripts/cpu_temp.sh",
-		"format": "<span size='90%'></span> :{}",
+		"format": "<span font-family='Font Awesome 7 Pro Light'>\uf2db</span>:{}",
 		"interval": 1,
 		"tooltip": false
 	},
 	"custom/gpu_temp": {
 		"exec": "~/.config/waybar/scripts/gpu_temp.sh",
-		"format": "<span size='110%'></span> :{}",
+		"format": "<span font-family='Font Awesome 7 Pro Light'>\ue843</span>:{}",
 		"interval": 1,
 		"tooltip": false
 	},
 	"custom/power": {
-		"format": " ",
+		"format": "\uf011 ",
 		"tooltip": false,
 		"on-click": "~/.config/waybar/scripts/powermenu.sh"
 	},
@@ -69,22 +69,22 @@
 		"interval": 3,
 		"format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
 		"format-icons": [
-			"<span color='#cbd4c1'>▁</span>",
-			"<span color='#cbd4c1'>▂</span>",
-			"<span color='#cbd4c1'>▃</span>",
-          	"<span color='#cbd4c1'>▄</span>",
-          	"<span color='#cbd4c1'>▅</span>",
-          	"<span color='#cbd4c1'>▆</span>",
-          	"<span color='#cbd4c1'>▇</span>",
-          	"<span color='#cbd4c1'>█</span>"
+			"<span color='#cbd4c1'>\u2581</span>",
+			"<span color='#cbd4c1'>\u2582</span>",
+			"<span color='#cbd4c1'>\u2583</span>",
+          	"<span color='#cbd4c1'>\u2584</span>",
+          	"<span color='#cbd4c1'>\u2585</span>",
+          	"<span color='#cbd4c1'>\u2586</span>",
+          	"<span color='#cbd4c1'>\u2587</span>",
+          	"<span color='#cbd4c1'>\u2588</span>"
 		],
 		"tooltip": false
 	},
 	"wireplumber#sink": {
 		"node-type": "Audio/Sink",
 		"format": "{icon} :{volume}%",
-		"format-icons": ["", ""],
-		"format-muted": "",
+		"format-icons": ["\uf027", "\uf028"],
+		"format-muted": "<span font-family='Font Awesome 7 Free Solid'>\uf6a9</span>",
 		"on-click": "~/.config/waybar/scripts/change_volume.sh -v 20 -t sink",
 		"on-click-right": "~/.config/waybar/scripts/change_volume.sh -v -20 -t sink",
 		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
@@ -92,8 +92,8 @@
 	"wireplumber#source": {
 		"node-type": "Audio/Source",
 		"format": "{icon}:{volume}%",
-		"format-icons": [""],
-		"format-muted": "",
+		"format-icons": ["\uf130"],
+		"format-muted": "\uf131",
 		"on-click": "~/.config/waybar/scripts/change_volume.sh -v 20 -t source",
 		"on-click-right": "~/.config/waybar/scripts/change_volume.sh -v -20 -t source",
 		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
@@ -125,7 +125,12 @@
         }
 	},
 	"hyprland/window": {
-		"separate-outputs": true
+		"format": "{initialTitle}",
+		"separate-outputs": true,
+		"rewrite": {
+			"Alacritty": "<span font-family='Font Awesome 7 Pro Solid'>\ue236</span>",
+			"Mozilla Firefox": "<span font-family='Font Awesome 7 Brands'>\ue007</span>"
+		}
 	},
 	"hyprland/language": {
 		"format": {},
