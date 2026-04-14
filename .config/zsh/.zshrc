@@ -48,9 +48,9 @@ HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space a
 # prompt
 NEWLINE=$'\n'
 if [[ "$DESKTOP_SESSION" == 'hyprland' ]]; then
-	PROMPT="${NEWLINE}%K{#2c6d37}%F{#78A65A} %n %K{#003f74}%F{#cbd4c1} %~ %f%k ❯ "
+	PROMPT="${NEWLINE}%K{#2c6d37}%F{#78A65A} %n %K{#003f74}%F{#cbd4c1} %3~ %f%k ❯ "
 	# remove percent at line end
 	PROMPT_EOL_MARK=''
 elif [[ "$DESKTOP_SESSION" == 'awesome' ]]; then
-	PROMPT="${NEWLINE}%K{#374eab}%F{#d6a2cb} %n %K{#2c316a}%F{#f4d760} %~ %f%k ❯ "
+	PROMPT="${NEWLINE}%K{#374eab}%F{#d6a2cb} %n %K{#2c316a}%F{#f4d760} %3~ %f%k ❯ "
 fi
