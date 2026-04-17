@@ -1,2 +1,5 @@
+# Keybinds
+map <C-l> abort
+
 # copy selection to system clipboard
 set selection-clipboard clipboard
