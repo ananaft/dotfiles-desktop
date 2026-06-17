@@ -43,6 +43,8 @@ bin/exercism
 !.config/wireplumber/
 !.config/wireplumber/wireplumber.conf.d/
 !.config/wireplumber/wireplumber.conf.d/*
+!.config/wofi/
+!.config/wofi/*
 !.config/zathura/
 !.config/zathura/zathurarc
 !.config/zsh/
