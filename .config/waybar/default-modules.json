@@ -116,6 +116,9 @@
 		"on-click-right": "~/.config/waybar/scripts/change_volume.sh -v -20 -t source",
 		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 	},
+	"tray": {
+		"spacing": 2
+	},
 	"hyprland/workspaces": {
 		"format": "{icon}: {windows}",
 		"format-window-separator": "",

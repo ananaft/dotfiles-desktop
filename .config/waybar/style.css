@@ -109,14 +109,17 @@ button:hover {
 }
 
 #workspaces button.empty {
-    padding: 0 5px;
     background-color: transparent;
     color: @white;
 }
 
 #workspaces button.active {
-	border: 2px solid alpha(@white, 0.9);
+	border: 2px solid alpha(@white, 0.6);
 	border-radius: 6px;
+}
+
+#workspaces button.active:not(.empty) {
+	border: 2px solid alpha(@white, 0.9);
 }
 
 #workspaces.screen1 button.active:not(.empty) {
