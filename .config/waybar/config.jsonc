@@ -8,18 +8,18 @@
 		"~/.config/waybar/default-modules.json"
 	],
 	"modules-left": [
-		"hyprland/workspaces#screen1",
+		"clock#screen1",
+		"hyprland/window",
         "hyprland/submap"
 	],
 	"modules-center": [
-		"hyprland/window"
+		"hyprland/workspaces#screen1"
     ],
 	"modules-right": [
 		"hyprland/language",
 		"wireplumber#sink",
 		"wireplumber#source",
 		"tray",
-		"clock#screen1",
 		"custom/power"
 	]
 }, {
@@ -31,11 +31,12 @@
 		"~/.config/waybar/default-modules.json"
 	],
 	"modules-left": [
-		"hyprland/workspaces#screen2",
+		"clock#screen2",
+		"hyprland/window",
         "hyprland/submap"
 	],
 	"modules-center": [
-		"hyprland/window"
+		"hyprland/workspaces#screen2"
     ],
 	"modules-right": [
 		"custom/cpu_temp",
@@ -46,7 +47,6 @@
 		"wireplumber#sink",
 		"wireplumber#source",
 		"tray",
-		"clock#screen2",
 		"custom/power"
 	]
 }]
