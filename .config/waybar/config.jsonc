@@ -8,7 +8,9 @@
 		"~/.config/waybar/default-modules.json"
 	],
 	"modules-left": [
+		"custom/power",
 		"clock#screen1",
+		"hyprland/language",
 		"hyprland/window",
         "hyprland/submap"
 	],
@@ -16,11 +18,13 @@
 		"hyprland/workspaces#screen1"
     ],
 	"modules-right": [
-		"hyprland/language",
+		"cpu",
+		"custom/cpu_temp",
+		"custom/gpu_temp",
+		"memory",
 		"wireplumber#sink",
 		"wireplumber#source",
-		"tray",
-		"custom/power"
+		"tray"
 	]
 }, {
 	"layer": "top",
@@ -31,7 +35,9 @@
 		"~/.config/waybar/default-modules.json"
 	],
 	"modules-left": [
+		"custom/power",
 		"clock#screen2",
+		"hyprland/language",
 		"hyprland/window",
         "hyprland/submap"
 	],
@@ -39,14 +45,12 @@
 		"hyprland/workspaces#screen2"
     ],
 	"modules-right": [
+		"cpu",
 		"custom/cpu_temp",
 		"custom/gpu_temp",
-		"cpu",
 		"memory",
-		"hyprland/language",
 		"wireplumber#sink",
 		"wireplumber#source",
-		"tray",
-		"custom/power"
+		"tray"
 	]
 }]

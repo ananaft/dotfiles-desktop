@@ -57,12 +57,12 @@
 		"tooltip": false
 	},
 	"custom/power": {
-		"format": "\uf011 ",
+		"format": "\uf011",
 		"tooltip": false,
 		"on-click": "~/.config/waybar/scripts/powermenu.sh"
 	},
 	"memory": {
-		"format": "{used:0.1f}G/{total:0.1f}G",
+		"format": "<span font-family='Font Awesome 7 Pro Regular'>\uf538</span>:{used:0.1f}G/{total:0.1f}G",
 		"tooltip": false
 	},
 	"cpu": {
@@ -93,7 +93,7 @@
 		"node-type": "Audio/Source",
 		"format": "{icon}:{volume}%",
 		"format-icons": ["\uf130"],
-		"format-muted": "\uf131",
+		"format-muted": "\uf131 ",
 		"on-click": "~/.config/waybar/scripts/change_volume.sh -v 20 -t source",
 		"on-click-right": "~/.config/waybar/scripts/change_volume.sh -v -20 -t source",
 		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
@@ -130,12 +130,14 @@
 		"rewrite": {
 			"Alacritty": "<span font-family='Font Awesome 7 Pro Solid'>\ue236</span>",
 			"Mozilla Firefox": "<span font-family='Font Awesome 7 Brands'>\ue007</span>"
-		}
+		},
+		"tooltip": false
 	},
 	"hyprland/language": {
 		"format": {},
 		"format-en": "EN",
 		"format-de": "DE",
+		"on-click": "hyprctl switchxkblayout rdr-crush-80 next",
 		"tooltip": false
 	}
 }
