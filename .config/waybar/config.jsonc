@@ -53,4 +53,27 @@
 		"wireplumber#source",
 		"tray"
 	]
+}, {
+	"layer": "top",
+	"output": "DP-2",
+	"height": 36,
+	"spacing": 5,
+	"include": [
+		"~/.config/waybar/default-modules.json"
+	],
+	"modules-left": [
+		"custom/power",
+		"clock#screen3",
+		"hyprland/language",
+		"hyprland/window",
+        "hyprland/submap"
+	],
+	"modules-center": [
+		"hyprland/workspaces#screen3"
+    ],
+	"modules-right": [
+		"wireplumber#sink",
+		"wireplumber#source",
+		"tray"
+	]
 }]

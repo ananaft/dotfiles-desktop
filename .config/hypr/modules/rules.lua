@@ -31,6 +31,22 @@ hl.workspace_rule({
 	monitor = "HDMI-A-1",
 	persistent = true,
 })
+hl.workspace_rule({
+	workspace = "7",
+	monitor = "DP-2",
+	persistent = true,
+	default = true,
+})
+hl.workspace_rule({
+	workspace = "8",
+	monitor = "DP-2",
+	persistent = true,
+})
+hl.workspace_rule({
+	workspace = "9",
+	monitor = "DP-2",
+	persistent = true,
+})
 
 -- Windows
 hl.window_rule({

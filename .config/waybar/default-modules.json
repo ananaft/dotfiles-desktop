@@ -44,6 +44,24 @@
 			"on-scroll-down": "shift_down"
         }
 	},
+	"clock#screen3": {
+		"tooltip-format": "<tt><span size='12pt' font='BitStromWera Nerd Font'>{calendar}</span></tt>",
+		"calendar": {
+			"mode": "month",
+			"format": {
+				"months":     "<span color='#c7849d'><b>{}</b></span>",
+				"days":       "<span color='#78A65A'><b>{}</b></span>",
+				"weeks":      "<span color='#2c6d37'><b>W{}</b></span>",
+				"weekdays":   "<span color='#C58B5F'><b>{}</b></span>",
+				"today":      "<span color='#c57277'><b><u>{}</u></b></span>"
+			}
+		},
+		"actions":  {
+			"on-click": "mode",
+			"on-scroll-up": "shift_up",
+			"on-scroll-down": "shift_down"
+        }
+	},
 	"custom/cpu_temp": {
 		"exec": "~/.config/waybar/scripts/cpu_temp.sh",
 		"format": "<span font-family='Font Awesome 7 Pro Light'>\uf2db</span>:{}",
@@ -122,6 +140,14 @@
             "4": "四",
             "5": "五",
 			"6": "六"
+        }
+	},
+	"hyprland/workspaces#screen3": {
+		"format": "{icon}",
+        "format-icons": {
+            "7": "七",
+            "8": "八",
+			"9": "九"
         }
 	},
 	"hyprland/window": {

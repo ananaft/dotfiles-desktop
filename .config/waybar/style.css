@@ -104,6 +104,10 @@ button:hover {
 	background-color: alpha(@cyan, 0.5);
 }
 
+#workspaces.screen3 button {
+	background-color: alpha(@green_bright, 0.5);
+}
+
 #workspaces button.empty {
     padding: 0 5px;
     background-color: transparent;
@@ -121,6 +125,10 @@ button:hover {
 
 #workspaces.screen2 button.active:not(.empty) {
 	background-color: alpha(@cyan, 0.9);
+}
+
+#workspaces.screen3 button.active:not(.empty) {
+	background-color: alpha(@green_bright, 0.9);
 }
 
 #workspaces button.urgent {
