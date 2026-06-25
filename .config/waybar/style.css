@@ -97,15 +97,15 @@ button:hover {
 }
 
 #workspaces.screen1 button {
-	background-color: alpha(@green, 0.5);
+	background-color: alpha(@yellow, 0.45);
 }
 
 #workspaces.screen2 button {
-	background-color: alpha(@cyan, 0.5);
+	background-color: alpha(@cyan, 0.45);
 }
 
 #workspaces.screen3 button {
-	background-color: alpha(@green_bright, 0.5);
+	background-color: alpha(@green, 0.45);
 }
 
 #workspaces button.empty {
@@ -123,19 +123,19 @@ button:hover {
 }
 
 #workspaces.screen1 button.active:not(.empty) {
-	background-color: alpha(@green, 0.9);
+	background-color: alpha(@yellow_bright, 0.7);
 }
 
 #workspaces.screen2 button.active:not(.empty) {
-	background-color: alpha(@cyan, 0.9);
+	background-color: alpha(@cyan_bright, 0.7);
 }
 
 #workspaces.screen3 button.active:not(.empty) {
-	background-color: alpha(@green_bright, 0.9);
+	background-color: alpha(@green_bright, 0.7);
 }
 
 #workspaces button.urgent {
-    background-color: alpha(@red_bright, 0.9);
+    background-color: alpha(@red_bright, 0.7);
 	animation-name: blink;
     animation-duration: 0.15s;
     animation-timing-function: linear;
