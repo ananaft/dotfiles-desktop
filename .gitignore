@@ -16,10 +16,13 @@ bin/exercism
 !.config/awesome/theme.lua
 !.config/fastfetch/
 !.config/fastfetch/config.jsonc
+
 !.config/hypr/
 !.config/hypr/*
 !.config/hypr/modules/
 !.config/hypr/modules/*
+!.config/hypr/scripts/
+!.config/hypr/scripts/*
 
 !.config/nvim/
 !.config/nvim/init.lua
@@ -34,12 +37,14 @@ bin/exercism
 
 !.config/shell/
 !.config/shell/*
+
 !.config/waybar/
 !.config/waybar/config.jsonc
 !.config/waybar/default-modules.json
 !.config/waybar/style.css
 !.config/waybar/scripts/
 !.config/waybar/scripts/*
+
 !.config/wireplumber/
 !.config/wireplumber/wireplumber.conf.d/
 !.config/wireplumber/wireplumber.conf.d/*
