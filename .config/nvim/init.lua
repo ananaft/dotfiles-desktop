@@ -18,7 +18,6 @@ Plug("nvim-tree/nvim-tree.lua") -- file explorer
 Plug("nvim-tree/nvim-web-devicons") -- pretty icons
 Plug("windwp/nvim-autopairs") -- bracket closing
 Plug("folke/which-key.nvim") -- which-key menu
-Plug("nvim-treesitter/nvim-treesitter") -- syntax highlighting
 Plug("catgoose/nvim-colorizer.lua") -- show colors in text
 Plug("bluz71/vim-moonfly-colors") -- color theme
 Plug("numToStr/Comment.nvim") -- improved commenting
@@ -43,7 +42,6 @@ require("core.lsp")
 require("plugins.nvim-tree")
 require("plugins.autopairs")
 require("plugins.which-key")
-require("plugins.treesitter")
 require("plugins.colorizer")
 require("plugins.moonfly")
 require("plugins.Comment")
