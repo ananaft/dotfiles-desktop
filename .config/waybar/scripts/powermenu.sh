@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 choice=$(printf "Shutdown\nReboot\nReset" | \
-	wofi --dmenu --hide-search --lines 3 --width 180 --xoffset 12 --yoffset 5 --cache-file=/dev/null)
+	~/.config/hypr/scripts/smart_wofi.sh \
+	--dmenu --hide-search --lines 3 --width 180 --xoffset 12 --yoffset 5 --cache-file=/dev/null)
 
 case "$choice" in
 	Shutdown)

@@ -1,6 +1,8 @@
 @define-color background	#031012;
 @define-color white			#cbd4c1;
-@define-color cyan			#48629c;
+@define-color yellow_bright		#c58b5f;
+@define-color cyan_bright		#93b2bb;
+@define-color green_bright		#78a65a;
 
 window {
 	background-color: alpha(@background, 0.7);
@@ -16,7 +18,7 @@ window {
 }
 
 #entry:selected {
-	background-color: alpha(@cyan, 0.7);
+	background-color: alpha(@white, 0.7);
 }
 
 #expander-box {
