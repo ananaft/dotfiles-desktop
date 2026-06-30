@@ -48,9 +48,9 @@ map("n", "<C-A-L>", ":wincmd L<CR>")
 
 -- window resize mappings
 local function vertical_resize(amount)
-  local pos = vim.fn.win_screenpos(0)
+  local col = vim.fn.win_screenpos(0)[2]
 
-  if pos[2] == 1 then
+  if col == 1 then
     -- left window: expand right
     vim.cmd("vertical resize " .. string.rep("+", amount) .. amount)
   else
@@ -62,9 +62,13 @@ map("n", "<A-L>", function() vertical_resize(1) end)
 map("n", "<A-H>", function() vertical_resize(-1) end)
 
 local function horizontal_resize(amount)
-	local pos = vim.fn.win_screenpos(0)
+	local row = vim.fn.win_screenpos(0)[1]
+	local tabline = vim.opt.showtabline:get()
+	if tabline then
+		row = row - 1
+	end
 
-	if pos[1] == 1 then
+	if row == 1 then
 		-- top window: expand down
 		vim.cmd("resize " .. string.rep("+", amount) .. amount)
 	else
