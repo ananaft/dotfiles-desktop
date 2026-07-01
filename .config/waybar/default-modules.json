@@ -158,7 +158,9 @@
 		"separate-outputs": true,
 		"rewrite": {
 			"Alacritty": "<span font-family='Font Awesome 7 Pro Solid'>\ue236</span>",
-			"Mozilla Firefox": "<span font-family='Font Awesome 7 Brands'>\ue007</span>"
+			"Mozilla Firefox": "<span font-family='Font Awesome 7 Brands'>\ue007</span>",
+			"zathura": "<span font-family='Font Awesome 7 Pro Regular'>\ue130</span>"
+
 		},
 		"tooltip": false
 	},
