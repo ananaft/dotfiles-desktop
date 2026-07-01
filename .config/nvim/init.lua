@@ -30,6 +30,7 @@ Plug("neovim/nvim-lspconfig") -- LSP configs
 Plug("mason-org/mason.nvim") -- LSP package manager 
 Plug("folke/trouble.nvim") -- diagnostics
 Plug("b0o/SchemaStore.nvim") -- enable JSON schemas
+Plug("romus204/tree-sitter-manager.nvim") -- treesitter install manager
 
 vim.call("plug#end")
 
@@ -51,3 +52,4 @@ require("plugins.FTerm")
 require("plugins.search-replace")
 require("plugins.mason")
 require("plugins.Trouble")
+require("plugins.tree-sitter-manager")
