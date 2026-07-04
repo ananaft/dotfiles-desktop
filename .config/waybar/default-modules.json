@@ -161,7 +161,8 @@
 			"^firefox\\s(.*?)( — Mozilla Firefox|Mozilla Firefox)?$": "<span font-family='Font Awesome 7 Brands'>\ue007</span> $1",
 			"^org.pwmt.zathura\\s.*\\/(.*)\\..*$": "<span font-family='Font Awesome 7 Pro Regular'>\ue130</span> $1",
 			"^guitarpro\\.exe\\s(.*?)( - Guitar Pro 8|Guitar Pro 8)?$": "<span font-family='Font Awesome 7 Pro Solid'>\uf8c9</span> $1",
-			"^Ardour\\s(.*?)( - Ardour|Ardour)?$": "<span font-family='Font Awesome 7 Pro Solid'>\uf3f1</span> $1"
+			"^Ardour\\s(.*?)( - Ardour|Ardour)?$": "<span font-family='Font Awesome 7 Pro Solid'>\uf3f1</span> $1",
+			"^steam\\s.*": "\uf1b6"
 		},
 		"tooltip": false
 	},
