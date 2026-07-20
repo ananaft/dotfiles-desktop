@@ -52,16 +52,25 @@ hl.workspace_rule({
 hl.window_rule({
 	name = "guitarpro",
 	match = {
-		class = "guitarpro.exe"
+		class = "^guitarpro.exe$"
 	},
 	idle_inhibit = "focus",
 	tile = true,
 })
 
 hl.window_rule({
+	name = "guitarpro-floating",
+	match = {
+		class = "^guitarpro.exe$",
+		title = "negative:^Guitar Pro 8$"
+	},
+	float = true
+})
+
+hl.window_rule({
 	name = "ardour",
 	match = {
-		class = "Ardour"
+		class = "^Ardour$"
 	},
 	idle_inhibit = "focus"
 })
