@@ -7,7 +7,7 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("~/.config/hypr/scripts/smart_wofi.sh
 
 -- Programs
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("alacritty"))
-hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("alacritty" .. ' --working-directory=$("$HOME"/.config/hypr/scripts/cwd.sh)'))
+hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("alacritty" .. ' --working-directory=' .. '"$("$HOME"/.config/hypr/scripts/cwd.sh)"'))
 hl.bind(mainMod .. " + SHIFT + G", hl.dsp.exec_cmd("firejail wine 'C:\\Program Files\\Arobas Music\\Guitar Pro 8\\GuitarPro.exe'; wineserver -k 15"))
 
 -- Windows
