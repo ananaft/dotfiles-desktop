@@ -1,4 +1,14 @@
 local wk = require("which-key")
+
+wk.setup({
+	win = {
+		height = {
+			min = 4,
+			max = 40
+		},
+	},
+})
+
 wk.add({
 	{ "<leader>d", desc = "Toggle File Tree" },
 	{ "<leader>?", desc = "Show Local Buffer Keymap" },
