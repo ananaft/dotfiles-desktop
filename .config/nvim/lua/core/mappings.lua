@@ -18,6 +18,16 @@ map("", "<leader>Q", ":q!<CR>") -- close file without saving
 map("n", "<leader>t", "<CMD>lua require('FTerm').toggle()<CR>") -- open floating terminal
 map("t", "<A-t>", "<C-\\><C-n><CMD>lua require('FTerm').toggle()<CR>") -- close floating terminal
 
+-- discard deletes into black hole register
+map("n", "d", '"_d')
+map("n", "D", '"_D')
+map("n", "x", '"_x')
+map("n", "X", '"_X')
+map("v", "d", '"_d')
+map("v", "D", '"_D')
+map("v", "x", '"_x')
+map("v", "X", '"_X')
+
 -- search-replace mappings
 map("n", "<leader>ros", ":SearchReplaceSingleBufferOpen<CR>")
 map("n", "<leader>rom", ":SearchReplaceMultiBufferOpen<CR>")
