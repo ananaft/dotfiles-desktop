@@ -5,6 +5,7 @@ alias ls='ls --color=auto --almost-all'
 alias grep='grep --color=auto'
 alias mv='mv -i'
 alias cp='cp -i'
+alias cpwd='pwd | wl-copy'
 
 # Programs
 z() { zathura --fork "$@" 2>/dev/null }
