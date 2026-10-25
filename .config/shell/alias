@@ -6,11 +6,18 @@ alias grep='grep --color=auto'
 alias mv='mv -i'
 alias cp='cp -i'
 alias cpwd='pwd | wl-copy'
-
-# Programs
-z() { zathura --fork "$@" 2>/dev/null }
-gccfh() { gcc -fdiagnostics-color=always -g -std=c99 -Wall -Wextra -pedantic -Wno-unused-parameter "$1" -o "${1::-2}" }
 alias n='nvim'
+
+# Functions
+z() { zathura --fork "$@" 2>/dev/null }
+gccfh() {
+	gcc -fdiagnostics-color=always -g -std=c99 -Wall -Wextra -pedantic \
+	-Wno-unused-parameter "$2" -o "${1::-2}"
+}
+screenshot() {
+	date_time="$(date '+%Y%m%d-%H%M%S')"
+	grim -l 4 -g "$(slurp)" - > "screenshot_${date_time}.png"
+}
 
 # Easier directory access
 alias cd='cd '
