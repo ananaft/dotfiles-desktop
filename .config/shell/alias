@@ -5,7 +5,7 @@ alias ls='ls --color=auto --almost-all'
 alias grep='grep --color=auto'
 alias mv='mv -i'
 alias cp='cp -i'
-alias cpwd='pwd | wl-copy'
+alias cpwd='printf "%s/" "$PWD" | wl-copy'
 alias n='nvim'
 
 # Functions
