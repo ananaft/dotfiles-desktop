@@ -2,6 +2,7 @@ local mainMod = "SUPER"
 
 -- Utility
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("hyprshutdown"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("pidof hyprlock || hyprlock"))
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("hyprctl switchxkblayout rdr-crush-80 next"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("~/.config/hypr/scripts/smart_wofi.sh --show drun"))
 
