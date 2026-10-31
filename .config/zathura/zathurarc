@@ -1,5 +1,7 @@
 # Keybinds
 map <C-l> abort
+map H scroll left
+map L scroll right
 
 # copy selection to system clipboard
 set selection-clipboard clipboard
